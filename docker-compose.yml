@@ -1,0 +1,7 @@
+appserver:
+    image: sawyerlin/docker-qml-app
+    container_name: qml-template
+    working_dir: /home/docker
+    volumes:
+        - .:/home/docker
+    
