@@ -1,0 +1,3 @@
+[submodule "submodules/webontv-front-qml"]
+	path = submodules/webontv-front-qml
+	url = git@github.com:sawyerlin/webontv-front-qml.git

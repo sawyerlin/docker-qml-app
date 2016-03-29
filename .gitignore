@@ -1,4 +1,4 @@
-qml-project-template/*
+submodules/
 .xpra/
 .xsession-errors
 .Xauthority
