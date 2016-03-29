@@ -4,7 +4,7 @@
 
 ### Usage
 
-    $ docker stop qml-template && docker rm qml-template && ./kickoff
+    $ ./kickoff
 
 > TODO: Generate qml lanch script
 

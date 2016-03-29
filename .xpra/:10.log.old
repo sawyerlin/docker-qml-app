@@ -3,7 +3,7 @@ X.Org X Server 1.15.1
 Release Date: 2014-04-13
 X Protocol Version 11, Revision 0
 Build Operating System: Linux 3.2.0-76-generic x86_64 Ubuntu
-Current Operating System: Linux 751135a33f25 3.19.0-56-generic #62~14.04.1-Ubuntu SMP Fri Mar 11 11:03:15 UTC 2016 x86_64
+Current Operating System: Linux 6acc737dd4e3 3.19.0-56-generic #62~14.04.1-Ubuntu SMP Fri Mar 11 11:03:15 UTC 2016 x86_64
 Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.19.0-56-generic root=UUID=1127a409-de46-4e40-a100-ae20ceeee7d0 ro quiet splash vt.handoff=7
 Build Date: 12 February 2015  02:49:29PM
 xorg-server 2:1.15.1-0ubuntu2.7 (For technical support please see http://www.ubuntu.com/support) 
@@ -13,7 +13,7 @@ Current version of pixman: 0.30.2
 Markers: (--) probed, (**) from config file, (==) default setting,
 	(++) from command line, (!!) notice, (II) informational,
 	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
-(++) Log file: "/home/docker/.xpra/Xorg.:10.log", Time: Fri Mar 25 18:38:31 2016
+(++) Log file: "/home/docker/.xpra/Xorg.:10.log", Time: Tue Mar 29 11:49:27 2016
 (++) Using config file: "/etc/xpra/xorg.conf"
 (==) Using system config directory "/usr/share/X11/xorg.conf.d"
 Initializing built-in extension Generic Event Extension
@@ -48,24 +48,23 @@ Initializing built-in extension XFree86-DRI
 Initializing built-in extension DRI2
 Loading extension GLX
 
-(Xpra:73): Gtk-WARNING **: Locale not supported by C library.
+(Xpra:72): Gtk-WARNING **: Locale not supported by C library.
 	Using the fallback 'C' locale.
-2016-03-25 18:38:31,482 server uuid is ef527da279684bf49c8dbccc632536c5
-2016-03-25 18:38:31,509 error loading or registering our dbus notifications forwarder:
-2016-03-25 18:38:31,509   org.freedesktop.DBus.Error.Spawn.ExecFailed: //bin/dbus-launch terminated abnormally without any error message
-2016-03-25 18:38:31,510 if you do not have a dedicated dbus session for this xpra instance,
-2016-03-25 18:38:31,510   you should use the '--no-notifications' flag
-2016-03-25 18:38:31,510 
-2016-03-25 18:38:31,511 cannot load dbus helper: org.freedesktop.DBus.Error.Spawn.ExecFailed: //bin/dbus-launch terminated abnormally without any error message
-2016-03-25 18:38:31,514 csc module csc_opencl could not be loaded: No module named numpy
-2016-03-25 18:38:31,550 pulseaudio server started with pid 87
+2016-03-29 11:49:29,507 server uuid is c824d598c309499c87a6897266d8acbb
+2016-03-29 11:49:30,192 error loading or registering our dbus notifications forwarder:
+2016-03-29 11:49:30,193   org.freedesktop.DBus.Error.Spawn.ExecFailed: //bin/dbus-launch terminated abnormally without any error message
+2016-03-29 11:49:30,193 if you do not have a dedicated dbus session for this xpra instance,
+2016-03-29 11:49:30,193   you should use the '--no-notifications' flag
+2016-03-29 11:49:30,193 
+2016-03-29 11:49:30,196 cannot load dbus helper: org.freedesktop.DBus.Error.Spawn.ExecFailed: //bin/dbus-launch terminated abnormally without any error message
+2016-03-29 11:49:30,211 csc module csc_opencl could not be loaded: No module named numpy
+2016-03-29 11:49:30,275 pulseaudio server started with pid 86
 /bin/sh: 1: pulseaudio: not found
-2016-03-25 18:38:31,550 child 'pulseaudio' with pid 87 has terminated
-2016-03-25 18:38:31,586 started child '/etc/X11/Xsession true' with pid 88
-2016-03-25 18:38:31,586 xpra server version 0.12.3
-2016-03-25 18:38:31,586 running with pid 73
-2016-03-25 18:38:31,603 child '/etc/X11/Xsession true' with pid 88 has terminated
-2016-03-25 18:38:31,605 error on publisher AvahiPublisher(Xpra ssh :10 :22 interface=-1)
+2016-03-29 11:49:30,275 child 'pulseaudio' with pid 86 has terminated
+2016-03-29 11:49:30,326 started child '/etc/X11/Xsession true' with pid 87
+2016-03-29 11:49:30,326 xpra server version 0.12.3
+2016-03-29 11:49:30,327 running with pid 72
+2016-03-29 11:49:30,450 error on publisher AvahiPublisher(Xpra ssh :10 :22 interface=-1)
 Traceback (most recent call last):
   File "/usr/lib/python2.7/dist-packages/xpra/net/avahi_publisher.py", line 77, in start
     publisher.start()
@@ -78,20 +77,21 @@ Traceback (most recent call last):
   File "/usr/lib/python2.7/dist-packages/dbus/bus.py", line 122, in __new__
     bus = cls._new_for_bus(address_or_type, mainloop=mainloop)
 DBusException: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
-2016-03-25 18:38:31,605 error on publisher AvahiPublisher(Xpra ssh :10 :22 interface=-1): org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
-2016-03-25 18:38:31,605 xpra is ready.
-2016-03-25 18:38:33,552 Warning: pulseaudio has terminated. Either fix the pulseaudio command line or use --no-pulseaudio to avoid this warning.
-2016-03-25 18:38:33,552  usually, only a single pulseaudio instance can be running for each user account, and one may be running already
-2016-03-25 18:38:36,333 New connection received: SocketConnection(/home/docker/.xpra/751135a33f25-10)
-2016-03-25 18:38:36,344 Handshake complete; enabling connection
-2016-03-25 18:38:36,350 Python/GObject Linux client version 0.12.3 connected from '751135a33f25' as 'docker'
-2016-03-25 18:38:36,351 windows/pixels forwarding is disabled for this client
-2016-03-25 18:38:36,355 Shutting down in response to request
-2016-03-25 18:38:37,356 Disconnecting existing client Protocol(SocketConnection(/home/docker/.xpra/751135a33f25-10)), reason is: shutting down
-2016-03-25 18:38:37,356 xpra client disconnected.
-2016-03-25 18:38:37,357 Connection lost
-2016-03-25 18:38:37,358 Connection lost
-2016-03-25 18:38:37,858 xpra is terminating.
-2016-03-25 18:38:37,859 removing socket /home/docker/.xpra/751135a33f25-10
-2016-03-25 18:38:37,859 killing xvfb with pid 74
+2016-03-29 11:49:30,469 error on publisher AvahiPublisher(Xpra ssh :10 :22 interface=-1): org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+2016-03-29 11:49:30,469 xpra is ready.
+2016-03-29 11:49:31,138 child '/etc/X11/Xsession true' with pid 87 has terminated
+2016-03-29 11:49:31,770 New connection received: SocketConnection(/home/docker/.xpra/6acc737dd4e3-10)
+2016-03-29 11:49:31,814 Handshake complete; enabling connection
+2016-03-29 11:49:31,856 Python/GObject Linux client version 0.12.3 connected from '6acc737dd4e3' as 'docker'
+2016-03-29 11:49:31,869 windows/pixels forwarding is disabled for this client
+2016-03-29 11:49:31,875 Shutting down in response to request
+2016-03-29 11:49:32,276 Warning: pulseaudio has terminated. Either fix the pulseaudio command line or use --no-pulseaudio to avoid this warning.
+2016-03-29 11:49:32,276  usually, only a single pulseaudio instance can be running for each user account, and one may be running already
+2016-03-29 11:49:32,877 Disconnecting existing client Protocol(SocketConnection(/home/docker/.xpra/6acc737dd4e3-10)), reason is: shutting down
+2016-03-29 11:49:32,877 xpra client disconnected.
+2016-03-29 11:49:32,878 Connection lost
+2016-03-29 11:49:32,879 Connection lost
+2016-03-29 11:49:33,380 xpra is terminating.
+2016-03-29 11:49:33,381 removing socket /home/docker/.xpra/6acc737dd4e3-10
+2016-03-29 11:49:33,381 killing xvfb with pid 73
 (EE) Server terminated successfully (0). Closing log file.

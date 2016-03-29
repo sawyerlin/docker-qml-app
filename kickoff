@@ -1,12 +1,16 @@
 #/bin/bash
+
+docker stop qml-template
+docker rm qml-template
+
 docker-compose up -d
 
 CONTAINERNAME="qml-template"
 CONTAINERDOMAIN=".docker-qml-app.docker"
 IPADDR=$(dig +short $CONTAINERNAME$CONTAINERDOMAIN)
 PASSWD=$(docker logs $CONTAINERNAME | sed -n 1p | sed -n 's/.*Password:\s*\(.*\)/\1/p')
-echo $PASSWD
-echo $IPADDR
+echo "PASSWD IS: "$PASSWD
+echo "IPADDR IS: "$IPADDR
 sleep 10s # waiting for ssh server
 sshpass -p $PASSWD ssh docker@$IPADDR "sh -c './docker-desktop -s 800x600 -d 10'"
 xpra --ssh="sshpass -p $PASSWD ssh -p 22" attach ssh:docker@$IPADDR:10
