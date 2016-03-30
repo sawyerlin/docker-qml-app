@@ -1,6 +1,6 @@
 [submodule "submodules/webontv-front-qml"]
 	path = submodules/webontv-front-qml
-	url = git@github.com:sawyerlin/webontv-front-qml.git
+    url = https://github.com/sawyerlin/webontv-front-qml.git
 [submodule "submodules/libfbxqml"]
 	path = submodules/libfbxqml
-	url = git@github.com:fbx/libfbxqml.git
+    url = https://github.com/fbx/libfbxqml.git
