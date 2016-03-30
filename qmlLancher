@@ -1,0 +1,1 @@
+sshpass -p oshahvee7Shu ssh docker@172.17.42.8 DISPLAY=:10 qmlscene -I /home/docker/submodules/libfbxqml

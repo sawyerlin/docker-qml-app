@@ -6,6 +6,8 @@
 
     $ ./kickoff
 
-> TODO: Generate qml lanch script
+Then the script **qmlLancher** is generate, execute
 
-    $ sshpass -p $PASSWD ssh docker@$IPADDR DISPLAY=:10 qmlscene
+    $ ./qmlLancher
+
+to run your qml application
