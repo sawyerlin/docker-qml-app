@@ -21,7 +21,7 @@ RUN apt-get -y install fuse || :
 RUN rm -rf /var/lib/dpkg/info/fuse.postinst
 RUN apt-get -y install fuse
 
-RUN apt-get install -y qt-sdk qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qmlscene
+RUN apt-get install -y qt-sdk qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qmlscene qtdeclarative5-qtmultimedia-plugin qtmultimedia5-dev
 
 RUN localedef -v -c -i en_US -f UTF-8 en_US.UTF-8 || :
 
