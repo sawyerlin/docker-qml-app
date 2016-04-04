@@ -6,7 +6,10 @@ RUN apt-get upgrade -y
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get install -y xpra rox-filer openssh-server pwgen xserver-xephyr xdm fluxbox xvfb sudo
+RUN apt-get install -y xpra rox-filer openssh-server pwgen xserver-xephyr xdm fluxbox xvfb sudo software-properties-common python-software-properties
+
+RUN add-apt-repository ppa:mc3man/trusty-media
+RUN apt-get update
 
 RUN sed -i 's/DisplayManager.requestPort/!DisplayManager.requestPort/g' /etc/X11/xdm/xdm-config
 RUN sed -i '/#any host/c\*' /etc/X11/xdm/Xaccess
@@ -21,7 +24,7 @@ RUN apt-get -y install fuse || :
 RUN rm -rf /var/lib/dpkg/info/fuse.postinst
 RUN apt-get -y install fuse
 
-RUN apt-get install -y qt-sdk qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qmlscene qtdeclarative5-qtmultimedia-plugin qtmultimedia5-dev
+RUN apt-get install -y qt-sdk qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qmlscene qtdeclarative5-qtmultimedia-plugin qtmultimedia5-dev gstreamer0.10-ffmpeg
 
 RUN localedef -v -c -i en_US -f UTF-8 en_US.UTF-8 || :
 
