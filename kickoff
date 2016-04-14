@@ -13,7 +13,7 @@ echo "PASSWD IS: "$PASSWD
 echo "IPADDR IS: "$IPADDR
 sleep 10s # waiting for ssh server
 
-echo "sshpass -p "$PASSWD" ssh docker@"$IPADDR" DISPLAY=:10 qmlscene \$1 -I /home/docker/submodules/libfbxqml" > qmlLancher
+echo "sshpass -p "$PASSWD" ssh docker@"$IPADDR" DISPLAY=:10 qmlscene submodules/webontv-front-qml/src/main.qml -I /home/docker/submodules/libfbxqml" > qmlLancher
 
 sshpass -p $PASSWD ssh docker@$IPADDR "sh -c './docker-desktop -s 800x600 -d 10'"
 xpra --ssh="sshpass -p $PASSWD ssh -p 22" attach ssh:docker@$IPADDR:10
