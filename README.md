@@ -6,13 +6,17 @@
 
 ### prerequests
 
-[Install docker-engine and
-docker-compose](http://sawyerlin.github.io/#/record/2015_11_25_11_35.md)
+> These first two articles should be fallowed to install **docker, docker-compose and dnsdocker**
+
+[Install docker-engine and docker-compose](http://sawyerlin.github.io/#/record/2015_11_25_11_35.md)
+
+[How to use dnsdock](http://sawyerlin.github.io/#/record/2015_11_26_12_38.md)
+
+> Then install these tools on your local machine
 
     $ sudo apt-get install xpra ssh sshpass
 
-[disable public key
-authentication](https://docs.oseems.com/general/application/ssh/disable-public-key-authentication)
+[Disable strict host key checking](http://askubuntu.com/questions/87449/how-to-disable-strict-host-key-checking-in-ssh/385187)
 
 ### Usage
 
