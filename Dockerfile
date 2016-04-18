@@ -24,7 +24,7 @@ RUN apt-get -y install fuse || :
 RUN rm -rf /var/lib/dpkg/info/fuse.postinst
 RUN apt-get -y install fuse
 
-RUN apt-get install -y qt-sdk qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qmlscene qtdeclarative5-qtmultimedia-plugin qtdeclarative5-localstorage-plugin qtmultimedia5-dev gstreamer0.10-ffmpeg gstreamer0.10*
+RUN apt-get install -y qt-sdk qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qmlscene qtdeclarative5-qtmultimedia-plugin qtdeclarative5-localstorage-plugin qtmultimedia5-dev libqt5qml-graphicaleffects gstreamer0.10-ffmpeg gstreamer0.10*
 
 RUN localedef -v -c -i en_US -f UTF-8 en_US.UTF-8 || :
 
