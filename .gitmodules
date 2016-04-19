@@ -6,4 +6,4 @@
     url = https://github.com/fbx/libfbxqml.git
 [submodule "submodules/hubee_qt5_test"]
 	path = submodules/hubee_qt5_test
-	url = git@gitlab.hubee.lan:dev/hubee_qt5_test.git
+	url = http://gitlab.hubee.lan/dev/hubee_qt5_test.git
