@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:latest
 MAINTAINER Sawyer LIN <sawyer.lin@gmail.com>
 
 RUN apt-get update -y
