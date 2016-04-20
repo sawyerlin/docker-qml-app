@@ -1,1 +1,1 @@
-sshpass -p Quuhe1gi1aht ssh docker@172.17.42.4 DISPLAY=:10 qmlscene $1 -I /home/docker/submodules/libfbxqml
+sshpass -p lifeici3Vi4R ssh docker@172.17.42.3 DISPLAY=:10 qmlscene $1 -I /home/docker/submodules/libfbxqml

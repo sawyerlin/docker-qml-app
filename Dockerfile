@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:16.04
 MAINTAINER Sawyer LIN <sawyer.lin@gmail.com>
 
 RUN apt-get update -y
@@ -11,7 +11,9 @@ RUN apt-get install -y xpra rox-filer openssh-server pwgen xserver-xephyr xdm fl
 RUN add-apt-repository ppa:mc3man/trusty-media
 RUN apt-get update
 
-RUN sed -i 's/DisplayManager.requestPort/!DisplayManager.requestPort/g' /etc/X11/xdm/xdm-config
+RUN sed -i 's/DisplayManager.requestPort/!Displ
+
+ayManager.requestPort/g' /etc/X11/xdm/xdm-config
 RUN sed -i '/#any host/c\*' /etc/X11/xdm/Xaccess
 RUN ln -s /usr/bin/Xorg /usr/bin/X
 RUN echo X11Forwarding yes >> /etc/ssh/ssh_config
