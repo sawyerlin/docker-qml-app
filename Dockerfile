@@ -6,10 +6,7 @@ RUN apt-get upgrade -y
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get install -y xpra rox-filer openssh-server pwgen xserver-xephyr xdm fluxbox xvfb sudo software-properties-common python-software-properties
-
-RUN add-apt-repository ppa:mc3man/trusty-media
-RUN apt-get update
+RUN apt-get install -y xpra rox-filer openssh-server pwgen xserver-xephyr xdm fluxbox xvfb sudo software-properties-common python-software-properties ffmpeg
 
 RUN sed -i 's/DisplayManager.requestPort/!Displ
 
