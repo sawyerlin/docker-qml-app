@@ -16,3 +16,5 @@ cd /src/config/ && sudo -u docker cp -R .[a-z]* [a-z]* /home/docker/
 /etc/init.d/xdm restart
 
 /usr/sbin/sshd -D
+
+echo $'PATH=/opt/qt-5.3/bin:$PATH\nexport PATH' > /home/docker/.profile
