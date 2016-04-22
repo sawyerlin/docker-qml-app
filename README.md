@@ -6,6 +6,20 @@
 
 ### prerequests
 
+> Because the docker use Ubuntu 16.04, and the xpra of 14.04 could not connect the version of xpra on 16.04. 
+> We need to install the right version of xpra 0.15.8 on ubuntu 14.04
+
+Add the line 
+    deb http://us.archive.ubuntu.com/ubuntu wily main universe
+to the end of file **/etc/apt/sources.list**
+    
+    $ sudo apt-get update
+    $ sudo apt-get install python-rencode
+    $ cd /tmp
+    $ wget http://xpra.org/dists/trusty/main/binary-amd64/xpra_0.15.8-3_amd64.deb
+
+double click on this file to install xpra
+
 > These first two articles should be fallowed to install **docker, docker-compose and dnsdocker**
 
 [Install docker-engine and docker-compose](http://sawyerlin.github.io/#/record/2015_11_25_11_35.md)

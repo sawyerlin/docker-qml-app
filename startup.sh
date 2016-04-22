@@ -9,6 +9,8 @@ useradd -m -d /home/docker -p $DOCKER_ENCRYPYTED_PASSWORD docker
 sed -Ei 's/adm:x:4:/docker:x:4:docker/' /etc/group
 adduser docker sudo
 
+echo '$PATH:/opt/qt-5.3/bin' >> /home/docker/.bashrc
+
 chsh -s /bin/bash docker
 
 cd /src/config/ && sudo -u docker cp -R .[a-z]* [a-z]* /home/docker/
@@ -16,5 +18,3 @@ cd /src/config/ && sudo -u docker cp -R .[a-z]* [a-z]* /home/docker/
 /etc/init.d/xdm restart
 
 /usr/sbin/sshd -D
-
-echo $'PATH=/opt/qt-5.3/bin:$PATH\nexport PATH' > /home/docker/.profile
