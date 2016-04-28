@@ -1,1 +1,1 @@
-sshpass -p bieD6ooThiet ssh docker@172.17.42.14 DISPLAY=:10 qmlscene submodules/hubee_qt5_test/poc/main.qml -I /home/docker/submodules/hubee_qt5_test/qt5
+sshpass -p Wai4ooReX3th ssh docker@172.17.42.4 DISPLAY=:10 qmlscene submodules/hubee_qt5_test/poc/main.qml -I /home/docker/submodules/hubee_qt5_test/qt5
