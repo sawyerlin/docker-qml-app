@@ -1,1 +1,1 @@
-sshpass -p onohch4aiCee ssh docker@172.17.42.38 DISPLAY=:10 qmlscene submodules/webontv-front-qml/src/main.qml -I /home/docker/submodules/hubee_qt5_test/qt5
+sshpass -p bieD6ooThiet ssh docker@172.17.42.14 DISPLAY=:10 qmlscene submodules/hubee_qt5_test/poc/main.qml -I /home/docker/submodules/hubee_qt5_test/qt5
