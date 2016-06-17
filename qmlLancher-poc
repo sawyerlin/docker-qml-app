@@ -1,1 +1,1 @@
-sshpass -p ahw0yah5ooKo ssh docker@172.17.42.3 DISPLAY=:10 qml-livereload/qmllive submodules/hubee_qt5_test/poc/main.qml -I /home/docker/submodules/hubee_qt5_test/qt5
+sshpass -p uLae0aaj3Fie ssh docker@172.17.42.3 DISPLAY=:10 qmllive submodules/hubee_qt5_test/poc/main.qml -I /home/docker/submodules/hubee_qt5_test/qt5
