@@ -3,3 +3,5 @@
 .Xauthority
 .*
 hubee_qt5_test
+
+submodules/ocs-freeboxv6
