@@ -4,3 +4,6 @@
 [submodule "submodules/libfbxqml"]
 	path = submodules/libfbxqml
     url = https://github.com/fbx/libfbxqml.git
+[submodule "submodules/QmlControls"]
+	path = submodules/QmlControls
+    url = https://github.com/sawyerlin/QmlControls.git
