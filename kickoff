@@ -14,7 +14,7 @@ echo "IPADDR IS: "$IPADDR
 sleep 10s # waiting for ssh server
 
 echo "sshpass -p "$PASSWD" ssh docker@"$IPADDR" DISPLAY=:10 qmllive submodules/hubee_qt5_test/poc/main.qml -I /home/docker/submodules/hubee_qt5_test/qt5" > qmlLancher-poc
-echo "sshpass -p "$PASSWD" ssh docker@"$IPADDR" DISPLAY=:10 qmllive submodules/ocs-freeboxv6/main.qml -I /home/docker/submodules/libfbxqml" > qmlLancher-ocs
+echo "sshpass -p "$PASSWD" ssh docker@"$IPADDR" DISPLAY=:10 qmllive submodules/ocs-freeboxv6/main-dev.qml -I /home/docker/submodules/libfbxqml" > qmlLancher-ocs
 echo "sshpass -p "$PASSWD" ssh docker@"$IPADDR" DISPLAY=:10 qmllive submodules/QmlControls/main.qml" > qmlLancher-sctrls
 
 sshpass -p $PASSWD ssh docker@$IPADDR "sh -c './docker-desktop -s 800x600 -d 10'"
