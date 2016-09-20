@@ -1,5 +1,7 @@
 # docker-qml-app
 
+![](https://images.microbadger.com/badges/image/sawyerlin/docker-qml-app.svg)
+
 > This docker is based on rogaha/docker-desktop which helps to run xwindows application in docker
 
 ## Ubuntu 14.04 Configuration
