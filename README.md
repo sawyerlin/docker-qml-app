@@ -42,4 +42,7 @@ Then the script **qmlLancher** is generate, execute
 
     $ ./qmlLancher
 
+### deploy
+
+    $ deploy --preprod -r ocsfreeqml -p ocsfreeqml -n
 to run your qml application
