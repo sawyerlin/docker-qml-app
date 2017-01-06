@@ -1,0 +1,1 @@
+sshpass -p Ohk0wai7ooB5 ssh docker@172.17.42.3 DISPLAY=:10 qmlscene submodules/QmlCompress/output/buildDir/ocs-freeboxv6/main-dev.qml -I /home/docker/submodules/libfbxqml
