@@ -1,0 +1,1 @@
+sshpass -p Eetheezah5ae ssh docker@172.17.42.3 DISPLAY=:10 qmllive submodules/arte-freeboxv6/main.qml -I /home/docker/submodules/hubee_qt5_test/qt5

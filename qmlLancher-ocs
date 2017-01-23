@@ -1,1 +1,1 @@
-sshpass -p Ohk0wai7ooB5 ssh docker@172.17.42.3 DISPLAY=:10 qmlscene submodules/ocs-freeboxv6/main-dev.qml -I /home/docker/submodules/libfbxqml
+sshpass -p Eetheezah5ae ssh docker@172.17.42.3 DISPLAY=:10 qmllive submodules/ocs-freeboxv6/main-dev.qml -I /home/docker/submodules/libfbxqml

@@ -18,6 +18,7 @@ echo "sshpass -p "$PASSWD" ssh docker@"$IPADDR" DISPLAY=:10 qmllive submodules/w
 echo "sshpass -p "$PASSWD" ssh docker@"$IPADDR" DISPLAY=:10 qmllive submodules/ocs-freeboxv6/main-dev.qml -I /home/docker/submodules/libfbxqml" > qmlLancher-ocs
 echo "sshpass -p "$PASSWD" ssh docker@"$IPADDR" DISPLAY=:10 qmllive submodules/QmlControls/main.qml" > qmlLancher-sctrls
 echo "sshpass -p "$PASSWD" ssh docker@"$IPADDR" DISPLAY=:10 qmllive submodules/QmlCompress/qml/main.qml" > qmlLancher-qmlcompress
+echo "sshpass -p "$PASSWD" ssh docker@"$IPADDR" DISPLAY=:10 qmllive submodules/arte-freeboxv6/main.qml -I /home/docker/submodules/hubee_qt5_test/qt5" > qmlLancher-arte
 
 sshpass -p $PASSWD ssh docker@$IPADDR "sh -c './docker-desktop -s 800x600 -d 10'"
 xpra --ssh="sshpass -p $PASSWD ssh -p 22" -d sound attach ssh:docker@$IPADDR:10
