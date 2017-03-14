@@ -1,1 +1,1 @@
-sshpass -p Eetheezah5ae ssh docker@172.17.42.3 DISPLAY=:10 qmllive submodules/QmlControls/main.qml
+sshpass -p jobai0iequ7X ssh docker@172.17.42.3 DISPLAY=:10 qmllive submodules/QmlControls/main.qml
